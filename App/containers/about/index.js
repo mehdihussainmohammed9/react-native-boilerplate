@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet,ScrollView } from 'react-native';
 import { GlobalStyle } from '../../theme/global';
 import {
   Container, Header, Content, HeaderBody,
@@ -24,6 +24,7 @@ class About extends PureComponent {
       'https://cdn.dribbble.com/users/4103091/screenshots/7206610/media/ffb593de453a0ec31a07d87032d874bb.jpg'
     ]
     return (
+      <ScrollView>
       <Container>
         <Header
           barStyle="dark-content"
@@ -65,6 +66,7 @@ class About extends PureComponent {
         </Content>
 
       </Container>
+      </ScrollView>
     );
   }
 }
